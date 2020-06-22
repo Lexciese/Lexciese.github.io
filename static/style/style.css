@@ -1,8 +1,8 @@
 body {
     margin: 0px;
-    padding-top: 5%;
+    padding-top: 75px;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.050), rgba(0, 0, 0, 0.4)), url("https://lh6.googleusercontent.com/proxy/g3MNRR4S0VBk1KWmTem8W_eoNZkjk4v5AKsQ4tUYpp4_ISwDFXdLwYQVPklvs0FjC6gGCbi1TqTgB3YNS6qSV80X3LozHJYmmHImtTqinxPl=w3840-h2160-p-k-no-nd-mv"); opacity: 1;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.050), rgba(0, 0, 0, 0.4)), url("https://lh6.googleusercontent.com/proxy/g3MNRR4S0VBk1KWmTem8W_eoNZkjk4v5AKsQ4tUYpp4_ISwDFXdLwYQVPklvs0FjC6gGCbi1TqTgB3YNS6qSV80X3LozHJYmmHImtTqinxPl=w3840-h2160-p-k-no-nd-mv"); opacity: 1; */
     /* background-image: url("https://lh6.googleusercontent.com/proxy/g3MNRR4S0VBk1KWmTem8W_eoNZkjk4v5AKsQ4tUYpp4_ISwDFXdLwYQVPklvs0FjC6gGCbi1TqTgB3YNS6qSV80X3LozHJYmmHImtTqinxPl=w3840-h2160-p-k-no-nd-mv"); */
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -27,19 +27,21 @@ body {
     color: white;
     font-weight: 700;
     letter-spacing: 10px;
-    padding: 0px;
+    padding-top: 30px;
 }
 
 
 #txt2 {
     padding-top: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     text-align: center;
     color: white;
     font-size: 40px;
     font-weight: bold;
 
 }
+
+
 
 #btn {
     visibility: hidden;
