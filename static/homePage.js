@@ -1,4 +1,4 @@
-let txt1 = document.getElementById("txt1");touch Procfile
+let txt1 = document.getElementById("txt1");
 
 function startTime() {
     var today = new Date();
