@@ -24,7 +24,7 @@ if (checkH >= 0 && checkH <= 11) {
     document.getElementById('txt2').innerHTML = "Selamat Pagi,<br>Falah Naufal Zaki"
 }else if (checkH >=12 && checkH <= 15) {
     document.getElementById('txt2').innerHTML = "Selamat Siang,<br>Falah Naufal Zaki"
-}else if (checkH >=16 && checkH <= 18) {
+}else if (checkH >=16 && checkH <= 17) {
     document.getElementById('txt2').innerHTML = "Selamat Sore,<br>Falah Naufal Zaki"
 }else {
     document.getElementById('txt2').innerHTML = "Selamat Malam,<br>Falah Naufal Zaki"
