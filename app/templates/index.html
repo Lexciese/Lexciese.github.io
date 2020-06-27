@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home Page</title>
     <script data-ad-client="ca-pub-2278462450376971" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style/style.css">
 </head>
 
@@ -16,33 +16,34 @@
         <nav class="navbar justify-content-between">
             <div class="col-md"></div>
             <div class="col-md" id="showCuaca" onchange="showCuaca()">
-                <img id="icon" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png" alt=""
-                    style="text-align: end;">
-
+                <a class="icon" href="https://www.google.com/search?q=weather"><img id="icon" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png" alt=""
+                style="text-align: end;"></a>
+                <span class="tooltiptext">Location : {{data.place}}</span>
                 <!-- <div class="card" id="card" style="width: 300px;">
                     <img class="card-img-top" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png"
-                        alt="Card image">
+                    alt="Card image">
                     <div class="card-body">
                         <h4 class="card-title">Current Weather : {{data.cuaca}}</h4>
                         <p class="card-text">
                             Description : {{data.ketCuaca}}<br>
                             Temp. : {{data.suhu}}'C<br>
                             Feels Like : {{data.feels_like}}'C<br>
-
+                            
                         </p>
                     </div>
                 </div> -->
             </div>
+            <div><a href="https://www.google.com/search?q=weather"><p id="suhu">{{data.suhu}}'C</p></a></div>
         </nav>
     </div>
 
-
+    
 
     <div class="container-fluid">
         <div class="row">
             <div id="txt1" class="col align-self-center"></div>
         </div>
-
+        
         <div class="row">
             <div id="txt2" class="col align-self-center">Welcome<br>Falah Naufal Zaki</div>
         </div>

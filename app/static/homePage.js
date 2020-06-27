@@ -17,8 +17,10 @@ function checkTime(i) {
 function txtColorToBlack() {
     var txt1 = document.getElementById('txt1');
     var txt2 = document.getElementById('txt2');
+    var suhu = document.getElementById('suhu');
     txt1.style.color = "black";
     txt2.style.color = "black";
+    suhu.style.color = "black";
 }
 
 
@@ -27,20 +29,20 @@ var pagiSiangMalam = new Date();
 var checkH = pagiSiangMalam.getHours();
 console.log(checkH)
 if (checkH >= 0 && checkH <= 11) {
-    document.getElementById('txt2').innerHTML = "Selamat Pagi,<br>";
+    document.getElementById('txt2').innerHTML = "Selamat Pagi,<br>Falah Naufal Zaki";
     document.body.style.backgroundImage = "url('/static/assets/images/sunrise.jpg')"
 
 } else if (checkH >= 12 && checkH <= 15) {
-    document.getElementById('txt2').innerHTML = "Selamat Siang,<br>";
+    document.getElementById('txt2').innerHTML = "Selamat Siang,<br>Falah Naufal Zaki";
     document.body.style.backgroundImage = "url(https://lh6.googleusercontent.com/proxy/g3MNRR4S0VBk1KWmTem8W_eoNZkjk4v5AKsQ4tUYpp4_ISwDFXdLwYQVPklvs0FjC6gGCbi1TqTgB3YNS6qSV80X3LozHJYmmHImtTqinxPl=w3840-h2160-p-k-no-nd-mv)";
     txtColorToBlack();
 
 } else if (checkH >= 16 && checkH <= 17) {
-    document.getElementById('txt2').innerHTML = "Selamat Sore,<br>";
+    document.getElementById('txt2').innerHTML = "Selamat Sore,<br>Falah Naufal Zaki";
     document.body.style.backgroundImage = "url('/static/assets/images/sunset.jpg')"
 
 } else {
-    document.getElementById('txt2').innerHTML = "Selamat Malam,<br>";
+    document.getElementById('txt2').innerHTML = "Selamat Malam,<br>Falah Naufal Zaki";
     document.body.style.backgroundImage = "url('/static/assets/images/night.jpg')"
 
 
