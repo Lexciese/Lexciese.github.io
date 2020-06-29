@@ -26,7 +26,7 @@ function txtColorToBlack() {
     var suhu = document.getElementById('suhu');
     txt1.style.color = "black";
     txt2.style.color = "black";
-    suhu.style.color = "black";
+    // suhu.style.color = "black";
 }
 
 

@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST', 'GET'])
 def home():
     # IPStack---------------
-    ip_adress = request.headers.get('X-Forwarded-For', request.remote_addr)
+    ip_adress = request.headers.get('X-Forwarded-For')
     access_key = "055665a80378dc3062df1b2272340728"
     url = "http://api.ipstack.com/check?access_key=" + access_key
     location = requests.get(url)
