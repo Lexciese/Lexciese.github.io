@@ -1,3 +1,9 @@
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+
+
+
 function startTime() {
     var today = new Date();
     var h = today.getHours();

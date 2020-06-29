@@ -13,12 +13,10 @@
 
 <body onload="startTime()">
     <div class="container-fluid">
-        <nav class="navbar justify-content-between">
-            <div class="col-md"></div>
-            <div class="col-md" id="showCuaca" onchange="showCuaca()">
-                <a class="icon" href="https://www.google.com/search?q=weather"><img id="icon" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png" alt=""
-                style="text-align: end;"></a>
-                <span class="tooltiptext">Location : {{data.place}}</span>
+        <nav class="nav justify-content-end">
+            <div class="navbar-nav" id="showCuaca" onchange="showCuaca()">
+                <a class="nav-item" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Location : {{data.place}}<br>desc. : {{data.ketCuaca}}" class="icon" href="https://www.google.com/search?q=weather"><img id="icon" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png" style="height: 75px;width: 75px;" alt=""></a>
+                <!-- <span class="tooltiptext">Location : {{data.place}}</span> -->
                 <!-- <div class="card" id="card" style="width: 300px;">
                     <img class="card-img-top" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png"
                     alt="Card image">
@@ -33,7 +31,9 @@
                     </div>
                 </div> -->
             </div>
-            <div><a href="https://www.google.com/search?q=weather"><p id="suhu">{{data.suhu}}'C</p></a></div>
+            <div class="navbar-nav">
+                <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Location : {{data.place}}<br>Desc. : {{data.ketCuaca}}"  class="nav-item navbar-text" href="https://www.google.com/search?q=weather"><p id="suhu">{{data.suhu}}'C</p></a>
+            </div>
         </nav>
     </div>
 
