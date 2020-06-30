@@ -50,32 +50,36 @@ body {
     margin: 0px;
 }
 #card {
+    visibility: hidden;
     z-index: 2;
     position: absolute;
+    top: 10%;
+    right: 3%;
+    background-color: rgb(212, 212, 212);
 }
 
 
 
 #txt1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 5.5vw;
     color: white;
     font-weight: 700;
-    letter-spacing: 10px;
-    padding-top: 5px;
-    min-width: 50%;
-    min-inline-size: 30px;
+    letter-spacing: 0.65vw;
+    padding-top: 0.325vw;
+    /* min-width: 50%;
+    min-inline-size: 30px; */
 }
 
 
 #txt2 {
     padding-top: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 3vw;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: bold;
-    min-width: 50%;
+    /* min-width: 50%; */
 
 }
 

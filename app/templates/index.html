@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home Page</title>
-    <script data-ad-client="ca-pub-2278462450376971" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-2278462450376971" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style/style.css">
 </head>
 
 <body onload="startTime()">
     <div class="container-fluid">
         <nav class="nav justify-content-end">
-            <div class="navbar-nav" id="showCuaca" onchange="showCuaca()">
-                <a class="nav-item" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Location : {{data.place}}<br>desc. : {{data.ketCuaca}}" class="icon" href="https://www.google.com/search?q=weather"><img id="icon" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png" style="height: 75px;width: 75px;" alt=""></a>
-                <!-- <span class="tooltiptext">Location : {{data.place}}</span> -->
-                <!-- <div class="card" id="card" style="width: 300px;">
-                    <img class="card-img-top" src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png"
-                    alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Current Weather : {{data.cuaca}}</h4>
-                        <p class="card-text">
-                            Description : {{data.ketCuaca}}<br>
-                            Temp. : {{data.suhu}}'C<br>
-                            Feels Like : {{data.feels_like}}'C<br>
-                            
-                        </p>
+            <div class="navbar-nav" id="showCuaca"
+                ondblclick="document.getElementById('card').style.visibility='visible'">
+                <a class="nav-item" data-toggle="tooltip" data-placement="bottom" data-html="true"
+                    title="Location : {{data.place}}<br>desc. : {{data.ketCuaca}}" class="icon"><img id="icon"
+                        src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png" style="height: 75px;width: 75px;"
+                        alt=""></a>
+                <div class="navbar-nav">
+                    <div class="card" id="card" style="width: fit-content;">
+                        <img class="card-img-top" style="width: 100px;height: 100px;align-self: center;"
+                            src="http://openweathermap.org/img/wn/{{data.icon}}@2x.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Current Weather :<br>{{data.cuaca}}</h4>
+                            <p class="card-text">
+                                Location : {{data.place}}<br>
+                                Description : {{data.ketCuaca}}<br>
+                                Temp. : {{data.suhu}}'C<br>
+                                Feels Like : {{data.feels_like}}'C<br>
+
+                            </p>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="navbar-nav">
-                <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Location : {{data.place}}<br>Desc. : {{data.ketCuaca}}"  class="nav-item navbar-text" href="https://www.google.com/search?q=weather"><p id="suhu">{{data.suhu}}'C</p></a>
+                <a data-toggle="tooltip" data-placement="bottom" data-html="true"
+                    title="Location : {{data.place}}<br>Desc. : {{data.ketCuaca}}" class="nav-item navbar-text"
+                    href="https://www.google.com/search?q=weather">
+                    <p id="suhu">{{data.suhu}}'C</p>
+                </a>
             </div>
         </nav>
     </div>
 
-    
 
     <div class="container-fluid">
         <div class="row">
             <div id="txt1" class="col align-self-center"></div>
         </div>
-        
+
         <div class="row">
             <div id="txt2" class="col align-self-center">Welcome<br>Falah Naufal Zaki</div>
         </div>

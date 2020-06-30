@@ -7,24 +7,11 @@ app = Flask(__name__)
 @app.route('/home')
 @app.route('/', methods=['POST', 'GET'])
 def home():
-    # IPStack---------------
-    if not request.headers.getlist("X-Forwarded-For"):
-        ip_adress = request.remote_addr
-    else:
-        ip_adress = request.headers.getlist("X-Forwarded-For")[0]
-
-    # headers_list = request.headers.getlist("X-Forwarded-For")
-    # ip_adress = headers_list[0] if headers_list else request.remote_addr
-
-    # ip_adress = request.access_route[-1]
 
 
-    # ip_adress = request.headers['X-Forwarded-For']
-
-    print(ip_adress)
 
     access_key = "055665a80378dc3062df1b2272340728"
-    url = "http://api.ipstack.com/" + ip_adress
+    url = "http://api.ipstack.com/check"
     params = {'access_key' : access_key}
     location = requests.get(url=url, params=params)
     getLocation = location.json()
